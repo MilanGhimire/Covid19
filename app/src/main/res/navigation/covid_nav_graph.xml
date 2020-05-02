@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/covid_nav_graph"
+    app:startDestination="@id/covidStatusFragment">
+
+    <fragment
+        android:id="@+id/covidStatusFragment"
+        android:name="com.milanghimire.covid19.ui.fragments.CovidStatusFragment"
+        android:label="CovidStatusFragment" />
+
+    <fragment
+        android:id="@+id/breakingNewsFragment"
+        android:name="com.milanghimire.covid19.ui.fragments.BreakingNewsFragment"
+        android:label="BreakingNewsFragment" >
+        <action
+            android:id="@+id/action_breakingNewsFragment_to_detailNewsFragment"
+            app:destination="@id/detailNewsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/savedNewsFragment"
+        android:name="com.milanghimire.covid19.ui.fragments.SavedNewsFragment"
+        android:label="SavedNewsFragment" >
+        <action
+            android:id="@+id/action_savedNewsFragment_to_detailNewsFragment"
+            app:destination="@id/detailNewsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.milanghimire.covid19.ui.fragments.SettingFragment"
+        android:label="SettingFragment" />
+
+    <fragment
+        android:id="@+id/detailNewsFragment"
+        android:name="com.milanghimire.covid19.ui.fragments.DetailNewsFragment"
+        android:label="DetailNewsFragment" />
+
+</navigation>
