@@ -10,7 +10,7 @@
 
     <fragment
         android:id="@+id/breakingNewsFragment"
-        android:name="com.milanghimire.covid19.ui.fragments.BreakingNewsFragment"
+        android:name="com.milanghimire.covid19.ui.fragments.LatestNewsFragment"
         android:label="BreakingNewsFragment" >
         <action
             android:id="@+id/action_breakingNewsFragment_to_detailNewsFragment"
