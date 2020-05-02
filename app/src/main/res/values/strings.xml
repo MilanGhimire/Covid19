@@ -16,4 +16,5 @@
     <string name="today">Today</string>
     <string name="news_source">News Source</string>
     <string name="news_title">News Title</string>
+    <string name="covid_19_latest_news">COVID-19 Latest News</string>
 </resources>
