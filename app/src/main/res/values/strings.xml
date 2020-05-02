@@ -11,4 +11,7 @@
     <string name="select_your_country">Select your country</string>
     <string name="country">Country</string>
     <string name="start">start</string>
+    <string name="find_out_more_on_staying_safe">Find out more on staying safe</string>
+    <string name="total">Total</string>
+    <string name="today">Today</string>
 </resources>
