@@ -4,4 +4,11 @@
     <string name="news">News</string>
     <string name="saved_news">Saved News</string>
     <string name="setting">Setting</string>
+    <string name="stay_safe_from_covid_19">Stay Safe from COVID-19</string>
+    <string name="avoid_close_contact">Avoid close contact</string>
+    <string name="wear_a_facemask">Wear a facemask</string>
+    <string name="use_handwash_clean_your_hands_often"><![CDATA[Use handwash & clean your hands often]]></string>
+    <string name="select_your_country">Select your country</string>
+    <string name="country">Country</string>
+    <string name="start">start</string>
 </resources>
