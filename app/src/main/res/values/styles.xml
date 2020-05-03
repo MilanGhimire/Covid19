@@ -11,6 +11,9 @@
     <style name="TitleText">
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:paddingEnd">36dp</item>
+        <item name="android:textColor">@color/title_color</item>
     </style>
 
     <style name="NormalText">
@@ -20,6 +23,24 @@
     <style name="ParentLayout">
         <item name="android:paddingStart">24dp</item>
         <item name="android:paddingEnd">24dp</item>
+        <item name="android:background">@color/layout_background_color</item>
+    </style>
+    
+    <style name="StatusLinearLayout">
+        <item name="android:padding">12dp</item>
+        <item name="android:background">@drawable/rectangular_box_with_shadow</item>
+    </style>
+
+    <style name="StatusTitleText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/statusTitleTextColor</item>
+    </style>
+
+    <style name="StatusNumericText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/statusNumericTextColor</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="layout_goneMarginBottom">3dp</item>
     </style>
 
 </resources>

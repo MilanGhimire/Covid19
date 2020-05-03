@@ -4,8 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/layout_background_color"
     tools:context=".ui.WelcomeScreenActivity">
-    
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -16,7 +17,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="39dp"
             style="@style/TitleText"
             android:text="@string/stay_safe_from_covid_19"
             android:textColor="#FFFFFF"/>
@@ -24,7 +25,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="7dp"
             style="@style/NormalText"
             android:text="@string/avoid_close_contact"
             android:textColor="#FFFFFF"/>
@@ -32,7 +33,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="7dp"
             style="@style/NormalText"
             android:text="@string/use_handwash_clean_your_hands_often"
             android:textColor="#FFFFFF"/>
@@ -40,8 +41,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginTop="7dp"
             style="@style/NormalText"
             android:text="@string/wear_a_facemask"
             android:textColor="#FFFFFF"/>
@@ -51,6 +51,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         android:gravity="bottom"
         android:orientation="vertical">
 
@@ -58,19 +60,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
+            android:layout_marginBottom="22dp"
             style="@style/TitleText"
             android:text="@string/select_your_country"
             android:textColor="#000000"/>
         
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:weightSum="2">
 
             <TextView
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 style="@style/NormalText"
                 android:text="@string/country"
                 android:textColor="#000000"/>
@@ -78,7 +82,8 @@
             <androidx.appcompat.widget.AppCompatSpinner
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"/>
 
         </LinearLayout>
 
@@ -88,6 +93,9 @@
             android:textSize="20sp"
             android:textAllCaps="true"
             android:text="@string/start"
+            android:paddingStart="104dp"
+            android:paddingEnd="104dp"
+            android:layout_marginBottom="48dp"
             android:drawableEnd="@drawable/ic_arrow_forward"/>
 
     </LinearLayout>

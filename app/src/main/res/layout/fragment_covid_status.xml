@@ -1,261 +1,316 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/ParentLayout"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tvSelectedCountryName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/country"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="254dp" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_home"
-        tools:layout_editor_absoluteY="4dp" />
-
-    <Button
-        android:id="@+id/btnToday"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/today"
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toStartOf="@+id/btnTotal"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="41dp" />
-
     <LinearLayout
-        android:id="@+id/llActive"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/llAffected"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="224dp">
-
-        <TextView
-            style="@style/TitleText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Data Title" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Data count"
-            android:textSize="20sp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/llRecovered"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/llTests"
-        app:layout_constraintTop_toTopOf="@+id/llTests">
-
-        <TextView
-            style="@style/TitleText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Data Title" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Data count"
-            android:textSize="20sp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/llTests"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/llActive"
-        app:layout_constraintEnd_toStartOf="@+id/llRecovered"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnToday"
-        app:layout_constraintVertical_bias="0.439">
-
-        <TextView
-            style="@style/TitleText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Data Title" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Data count"
-            android:textSize="20sp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/llCritical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/llDeath"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="336dp">
-
-        <TextView
-            style="@style/TitleText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Data Title" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Data count"
-            android:textSize="20sp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/llAffected"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/llActive"
-        app:layout_constraintTop_toTopOf="@+id/llActive">
-
-        <TextView
-            style="@style/TitleText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Data Title" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Data count"
-            android:textSize="20sp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/llDeath"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/llCritical"
-        app:layout_constraintTop_toTopOf="@+id/llCritical">
-
-        <TextView
-            style="@style/TitleText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Data Title" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Data count"
-            android:textSize="20sp" />
-
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/btnTotal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/total"
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnToday"
-        tools:layout_editor_absoluteY="42dp" />
-
-
-    <LinearLayout
-        style="@style/ParentLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/tvFondOutMore"
-        app:layout_constraintTop_toBottomOf="@+id/llCritical"
-        tools:layout_editor_absoluteX="24dp">
+        android:orientation="horizontal">
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             style="@style/TitleText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/stay_safe_from_covid_19"
-            android:textColor="#000000" />
+            android:text="@string/covid_19_statistics"/>
 
         <TextView
-            style="@style/NormalText"
-            android:layout_width="match_parent"
+            android:id="@+id/tvSelectedCountryName"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="@string/avoid_close_contact"
-            android:textColor="#000000" />
+            android:paddingEnd="8dp"
+            android:layout_gravity="bottom"
+            android:text="@string/country"/>
 
-        <TextView
-            style="@style/NormalText"
-            android:layout_width="match_parent"
+        <ImageView
+            android:id="@+id/ivSelectedCountryFlag"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="@string/use_handwash_clean_your_hands_often"
-            android:textColor="#000000" />
-
-        <TextView
-            style="@style/NormalText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp"
-            android:text="@string/wear_a_facemask"
-            android:textColor="#000000" />
+            android:contentDescription="@string/country"
+            android:layout_gravity="bottom"
+            app:srcCompat="@drawable/ic_flag"/>
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/tvFondOutMore"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:text="@string/find_out_more_on_staying_safe"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:gravity="center_horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/btnToday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/today"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:id="@+id/btnTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<!--        parent layout for scrollView-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+<!--            Row first-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/StatusLinearLayout"
+                    android:orientation="vertical"
+                    android:padding="20sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/StatusTitleText"
+                        android:text="@string/tests"/>
+
+                    <TextView
+                        android:id="@+id/tvTests"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/StatusNumericText"
+                        android:text="@string/_0"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/StatusLinearLayout"
+                    android:layout_gravity="end"
+                    android:orientation="vertical"
+                    android:padding="20sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/StatusTitleText"
+                        android:text="@string/affected" />
+
+                    <TextView
+                        android:id="@+id/tvAffected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/StatusNumericText"
+                        android:text="@string/_0"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+<!--            End of Row first-->
+
+            <!--        Row second-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/StatusLinearLayout"
+                    android:orientation="vertical"
+                    android:padding="20sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/StatusTitleText"
+                        android:text="@string/active"/>
+
+                    <TextView
+                        android:id="@+id/tvActive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/StatusNumericText"
+                        android:text="@string/_0"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/StatusLinearLayout"
+                    android:layout_gravity="end"
+                    android:orientation="vertical"
+                    android:padding="20sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/StatusTitleText"
+                        android:text="@string/recovered" />
+
+                    <TextView
+                        android:id="@+id/tvRecovered"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/StatusNumericText"
+                        android:text="@string/_0"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--            End of Row first-->
+
+            <!--        Row third-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/StatusLinearLayout"
+                    android:orientation="vertical"
+                    android:padding="20sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/StatusTitleText"
+                        android:text="@string/critical"/>
+
+                    <TextView
+                        android:id="@+id/tvCritical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/StatusNumericText"
+                        android:text="@string/_0"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/StatusLinearLayout"
+                    android:layout_gravity="end"
+                    android:orientation="vertical"
+                    android:padding="20sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/StatusTitleText"
+                        android:text="@string/death" />
+
+                    <TextView
+                        android:id="@+id/tvDeath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/StatusNumericText"
+                        android:text="@string/_0"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+<!--            End of Row third-->
+
+<!--            Stay safe information-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:textSize="20sp"
+                    android:text="@string/stay_safe_from_covid_19"
+                    android:textColor="@color/md_black_1000" />
+
+                <TextView
+                    style="@style/NormalText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/avoid_close_contact"
+                    android:textColor="#000000" />
+
+                <TextView
+                    style="@style/NormalText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/use_handwash_clean_your_hands_often"
+                    android:textColor="#000000" />
+
+                <TextView
+                    style="@style/NormalText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="@string/wear_a_facemask"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+<!--            End of Stay safe information-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvFondOutMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="12dp"
+                    android:text="@string/find_out_more_on_staying_safe" />
+                
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/more_link"
+                    android:src="@drawable/ic_link"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+<!--        End of Scrollview layout-->
+
+    </ScrollView>
+
+</LinearLayout>
