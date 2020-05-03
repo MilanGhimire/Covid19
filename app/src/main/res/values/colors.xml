@@ -4,6 +4,13 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
 
+    <color name="title_color">#0D1333</color>
+    <color name="layout_background_color">#F2F3F5</color>
+    <color name="welcome_activity">#241C6E</color>
+
+    <color name="statusTitleTextColor">#65676B</color>
+    <color name="statusNumericTextColor">#050505</color>
+
 
     <!-- google's material design colours from
     http://www.google.com/design/spec/style/color.html#color-ui-color-palette -->
