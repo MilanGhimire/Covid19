@@ -1,6 +1,6 @@
-package com.milanghimire.api
+package com.milanghimire.covid19.api
 
-import com.milanghimire.util.Constants.Companion.BASE_URL
+import com.milanghimire.covid19.util.Constants.Companion.BASE_URL
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

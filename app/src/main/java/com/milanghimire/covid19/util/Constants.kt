@@ -1,4 +1,4 @@
-package com.milanghimire.util
+package com.milanghimire.covid19.util
 
 class Constants {
 
