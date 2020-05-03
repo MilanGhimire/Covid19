@@ -7,6 +7,7 @@
     <color name="title_color">#0D1333</color>
     <color name="layout_background_color">#F2F3F5</color>
     <color name="welcome_activity">#241C6E</color>
+    <color name="button_color">#6694FF</color>
 
     <color name="statusTitleTextColor">#65676B</color>
     <color name="statusNumericTextColor">#050505</color>
