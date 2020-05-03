@@ -68,6 +68,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="70dp"
+            style="@style/StatusLinearLayout"
             android:weightSum="2">
 
             <TextView
@@ -91,13 +92,14 @@
             android:id="@+id/btnStart"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/layout_blue_stroke"
+            android:background="@drawable/layout_stroke_blue"
             android:textColor="@color/button_color"
             android:textSize="20sp"
             android:textAllCaps="true"
             android:text="@string/start"
             android:paddingStart="104dp"
             android:paddingEnd="104dp"
+            android:layout_marginTop="40dp"
             android:layout_marginBottom="48dp"
             android:drawableEnd="@drawable/ic_arrow_forward"/>
 
