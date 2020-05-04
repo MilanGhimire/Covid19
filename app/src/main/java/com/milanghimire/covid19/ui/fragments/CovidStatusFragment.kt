@@ -22,7 +22,7 @@ class CovidStatusFragment : Fragment(R.layout.fragment_covid_status) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel = (activity as CovidActivity).viewModel
+        viewModel = (activity as CovidActivity).covidViewModel
 
         setupUI()
 
