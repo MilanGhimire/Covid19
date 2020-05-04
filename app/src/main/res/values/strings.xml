@@ -18,7 +18,6 @@
     <string name="covid_19_statistics">COVID-19 Statistics</string>
     <string name="tests">Tests</string>
     <string name="_0">0</string>
-    <string name="affected">Affected</string>
     <string name="recovered">Recovered</string>
     <string name="active">Active</string>
     <string name="critical">Critical</string>
@@ -26,4 +25,7 @@
     <string name="more_link">more link</string>
     <string name="article_title">Article Title</string>
     <string name="article_source">Article Source</string>
+    <string name="today_s_cases">Today\'s Cases</string>
+    <string name="today_s_deaths">Today\'s Deaths</string>
+    <string name="cases">Cases</string>
 </resources>
