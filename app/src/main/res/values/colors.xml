@@ -10,7 +10,14 @@
     <color name="button_color">#6694FF</color>
 
     <color name="statusTitleTextColor">#65676B</color>
-    <color name="statusNumericTextColor">#050505</color>
+
+<!--    Covid-19 cases color chart-->
+    <color name="testsCasesColor">#050505</color>
+    <color name="casesColor">#484848</color>
+    <color name="activeCasesColor">#33CCFF</color>
+    <color name="recoveredCasesColor">#8ACA2B</color>
+    <color name="criticalCasesColor">#FF9900</color>
+    <color name="deathCasesColor">#FF0000</color>
 
 
     <!-- google's material design colours from

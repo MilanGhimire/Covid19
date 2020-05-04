@@ -8,4 +8,7 @@ class CovidRepository(
 ) {
     suspend fun getCovidStatus(countryName: String) =
         RetrofitCovidInstance.api.getStatusByCountry(countryName)
+
+    suspend fun getCovidWorldStatus() =
+        RetrofitCovidInstance.api.getStatusOfWorld()
 }
