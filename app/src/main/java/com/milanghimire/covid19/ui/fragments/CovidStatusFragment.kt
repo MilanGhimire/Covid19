@@ -3,11 +3,10 @@ package com.milanghimire.covid19.ui.fragments
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
-import com.bumptech.glide.Glide
 import com.milanghimire.covid19.R
+import com.milanghimire.covid19.db.entities.CovidCountry
 import com.milanghimire.covid19.db.models.CovidCountryResponse
 import com.milanghimire.covid19.ui.CovidActivity
 import com.milanghimire.covid19.ui.CovidViewModel
