@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.milanghimire.covid19.repository.CovidRepository
 
+@Suppress("UNCHECKED_CAST")
 class CovidViewModelProviderFactory(
     val covidRepository: CovidRepository
 ) : ViewModelProvider.Factory {
