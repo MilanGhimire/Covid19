@@ -5,12 +5,12 @@
         android:title="@string/todays_status"
         android:icon="@drawable/ic_home"/>
 
-    <item android:id="@+id/breakingNewsFragment"
-        android:title="@string/news"
+    <item android:id="@+id/covidWorldStatusFragment"
+        android:title="@string/world_s_status"
         android:icon="@drawable/ic_language"/>
 
-    <item android:id="@+id/savedNewsFragment"
-        android:title="@string/saved_news"
+    <item android:id="@+id/breakingNewsFragment"
+        android:title="@string/news"
         android:icon="@drawable/ic_bookmark"/>
 
     <item android:id="@+id/settingFragment"
