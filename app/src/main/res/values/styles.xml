@@ -6,6 +6,8 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="fontFamily">@font/graphik_regular</item>
     </style>
     
     <style name="TitleText">
@@ -14,6 +16,7 @@
         <item name="android:layout_marginTop">14dp</item>
         <item name="android:paddingEnd">36dp</item>
         <item name="android:textColor">@color/title_color</item>
+        <item name="android:fontFamily">@font/graphik_semibold</item>
     </style>
 
     <style name="NormalText">
@@ -41,6 +44,7 @@
         <item name="android:textColor">@color/statusNumericTextColor</item>
         <item name="android:layout_marginTop">7dp</item>
         <item name="layout_goneMarginBottom">3dp</item>
+        <item name="android:fontFamily">@font/graphik_medium</item>
     </style>
 
 </resources>
