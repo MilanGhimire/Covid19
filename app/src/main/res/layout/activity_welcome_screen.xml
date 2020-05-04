@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="180dp"
         android:orientation="vertical"
         style="@style/ParentLayout"
         android:background="@drawable/layout_bottom_radius">
@@ -51,22 +51,30 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:gravity="bottom"
+        android:gravity="center"
         android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_nurse_with_mask"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
             android:layout_marginBottom="22dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
             android:text="@string/select_your_country"
+            android:textSize="20sp"
             android:textColor="#000000"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp">
+            android:layout_height="70dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            style="@style/StatusLinearLayout">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -89,6 +97,8 @@
             android:id="@+id/btnStart"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
             android:background="@drawable/layout_stroke_blue"
             android:textColor="@color/button_color"
             android:textSize="20sp"
@@ -97,7 +107,7 @@
             android:paddingStart="104dp"
             android:paddingEnd="104dp"
             android:layout_marginTop="40dp"
-            android:layout_marginBottom="48dp"
+            android:layout_marginBottom="0dp"
             android:drawableEnd="@drawable/ic_arrow_forward"/>
 
     </LinearLayout>
