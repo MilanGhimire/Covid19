@@ -28,4 +28,5 @@
     <string name="today_s_deaths">Today\'s Deaths</string>
     <string name="cases">Cases</string>
     <string name="world_s_status">World\'s Status</string>
+    <string name="world">World</string>
 </resources>

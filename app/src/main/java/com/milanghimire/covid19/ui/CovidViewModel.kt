@@ -1,9 +1,11 @@
 package com.milanghimire.covid19.ui
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.milanghimire.covid19.models.CovidCountryResponse
+import com.milanghimire.covid19.models.CovidWorldStatusResponse
 import com.milanghimire.covid19.repository.CovidRepository
 import com.milanghimire.covid19.util.Resource
 import kotlinx.coroutines.launch
@@ -14,18 +16,37 @@ class CovidViewModel(
 ) : ViewModel() {
 
     val covidStatus: MutableLiveData<Resource<CovidCountryResponse>> = MutableLiveData()
+    val covidWorldStatus: MutableLiveData<Resource<CovidWorldStatusResponse>> = MutableLiveData()
 
     init {
         getCovidStatus("nepal")
+        getCovidWorldStatus()
     }
 
     fun getCovidStatus(countryName: String) = viewModelScope.launch {
         covidStatus.postValue(Resource.Loading())
         val response = covidRepository.getCovidStatus(countryName)
+        Log.d("ViewModel", "Country status: ${response.body()}")
         covidStatus.postValue(handleCovidStatusResponse(response))
     }
 
     private fun handleCovidStatusResponse(response: Response<CovidCountryResponse>) : Resource<CovidCountryResponse> {
+        if (response.isSuccessful) {
+            response.body()?.let { resultResponse ->
+                return Resource.Success(resultResponse)
+            }
+        }
+        return Resource.Error(response.message())
+    }
+
+    fun getCovidWorldStatus() = viewModelScope.launch {
+        covidWorldStatus.postValue(Resource.Loading())
+        val response = covidRepository.getCovidWorldStatus()
+        Log.d("ViewModel", "World status: ${response.body()}")
+        covidWorldStatus.postValue(handleCovidWorldStatusResponse(response))
+    }
+
+    private fun handleCovidWorldStatusResponse(response: Response<CovidWorldStatusResponse>) : Resource<CovidWorldStatusResponse> {
         if (response.isSuccessful) {
             response.body()?.let { resultResponse ->
                 return Resource.Success(resultResponse)

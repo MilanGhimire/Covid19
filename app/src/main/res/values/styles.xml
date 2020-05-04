@@ -41,7 +41,6 @@
 
     <style name="StatusNumericText">
         <item name="android:textSize">20sp</item>
-        <item name="android:textColor">@color/statusNumericTextColor</item>
         <item name="android:layout_marginTop">7dp</item>
         <item name="layout_goneMarginBottom">3dp</item>
         <item name="android:fontFamily">@font/graphik_medium</item>

@@ -19,21 +19,12 @@
             android:text="@string/covid_19_statistics"/>
 
         <TextView
-            android:id="@+id/tvSelectedCountryName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingStart="0dp"
             android:paddingEnd="8dp"
             android:layout_gravity="bottom"
-            android:text="@string/country"/>
-
-        <ImageView
-            android:id="@+id/ivSelectedCountryFlag"
-            android:layout_width="35dp"
-            android:layout_height="30dp"
-            android:contentDescription="@string/country"
-            android:layout_gravity="bottom"
-            app:srcCompat="@drawable/ic_flag"/>
+            android:text="@string/world"/>
 
     </LinearLayout>
 
@@ -149,6 +140,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/StatusNumericText"
+                        android:textColor="@color/testsCasesColor"
                         android:text="@string/_0"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -173,6 +165,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/StatusNumericText"
+                        android:textColor="@color/casesColor"
                         android:text="@string/_0"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -207,6 +200,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/StatusNumericText"
+                        android:textColor="@color/activeCasesColor"
                         android:text="@string/_0"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -231,6 +225,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/StatusNumericText"
+                        android:textColor="@color/recoveredCasesColor"
                         android:text="@string/_0"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -265,6 +260,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/StatusNumericText"
+                        android:textColor="@color/criticalCasesColor"
                         android:text="@string/_0"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -289,6 +285,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/StatusNumericText"
+                        android:textColor="@color/deathCasesColor"
                         android:text="@string/_0"
                         android:textSize="20sp" />
                 </LinearLayout>
