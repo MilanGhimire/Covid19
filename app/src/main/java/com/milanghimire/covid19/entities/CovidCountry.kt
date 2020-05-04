@@ -1,4 +1,4 @@
-package com.milanghimire.covid19.db.entities
+package com.milanghimire.covid19.entities
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
