@@ -62,6 +62,6 @@ class CovidStatusFragment : Fragment(R.layout.fragment_covid_status) {
         tvCritical.text = status.critical.toString()
         tvDeath.text = status.todayDeaths.toString()
 
-//        Glide.with()
+//        Glide.with(this).load(staus)
     }
 }
