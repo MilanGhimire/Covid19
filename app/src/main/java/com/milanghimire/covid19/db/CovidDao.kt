@@ -2,7 +2,7 @@ package com.milanghimire.covid19.db
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.milanghimire.covid19.db.entities.CovidCountry
+import com.milanghimire.covid19.entities.CovidCountry
 
 @Dao
 interface CovidDao {

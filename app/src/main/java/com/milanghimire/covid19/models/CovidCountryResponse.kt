@@ -1,4 +1,4 @@
-package com.milanghimire.covid19.db.models
+package com.milanghimire.covid19.models
 
 data class CovidCountryResponse(
     val active: Int,
