@@ -77,7 +77,9 @@ class CovidStatusFragment : Fragment(R.layout.fragment_covid_status) {
         // initialize the UI views
         tvSelectedCountryName.text = status.country
 
-        tvAffected.text = status.todayCases.toString()
+        tvTodayCase.text = status.todayCases.toString()
+        tvTodayDeaths.text = status.todayDeaths.toString()
+        tvCases.text = status.todayCases.toString()
         tvDeath.text = status.todayDeaths.toString()
         tvTests.text = status.tests.toString()
         tvActive.text = status.active.toString()
