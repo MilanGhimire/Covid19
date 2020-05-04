@@ -79,8 +79,8 @@ class CovidStatusFragment : Fragment(R.layout.fragment_covid_status) {
 
         tvTodayCase.text = status.todayCases.toString()
         tvTodayDeaths.text = status.todayDeaths.toString()
-        tvCases.text = status.todayCases.toString()
-        tvDeath.text = status.todayDeaths.toString()
+        tvCases.text = status.cases.toString()
+        tvDeath.text = status.deaths.toString()
         tvTests.text = status.tests.toString()
         tvActive.text = status.active.toString()
         tvRecovered.text = status.recovered.toString()

@@ -2,7 +2,6 @@
     <string name="app_name">Covid19</string>
     <string name="todays_status">Today\'s Status</string>
     <string name="news">News</string>
-    <string name="saved_news">Saved News</string>
     <string name="setting">Setting</string>
     <string name="stay_safe_from_covid_19">Stay Safe from COVID-19</string>
     <string name="avoid_close_contact">\u2022 Avoid close contact</string>
@@ -28,4 +27,5 @@
     <string name="today_s_cases">Today\'s Cases</string>
     <string name="today_s_deaths">Today\'s Deaths</string>
     <string name="cases">Cases</string>
+    <string name="world_s_status">World\'s Status</string>
 </resources>

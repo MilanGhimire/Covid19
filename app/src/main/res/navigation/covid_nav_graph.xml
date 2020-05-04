@@ -9,20 +9,18 @@
         android:label="CovidStatusFragment" />
 
     <fragment
+        android:id="@+id/covidWorldStatusFragment"
+        android:name="com.milanghimire.covid19.ui.fragments.CovidWorldStatusFragment"
+        android:label="CovidWorldStatusFragment" >
+    </fragment>
+
+
+    <fragment
         android:id="@+id/breakingNewsFragment"
         android:name="com.milanghimire.covid19.ui.fragments.LatestNewsFragment"
         android:label="BreakingNewsFragment" >
         <action
             android:id="@+id/action_breakingNewsFragment_to_detailNewsFragment"
-            app:destination="@id/detailNewsFragment" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/savedNewsFragment"
-        android:name="com.milanghimire.covid19.ui.fragments.SavedNewsFragment"
-        android:label="SavedNewsFragment" >
-        <action
-            android:id="@+id/action_savedNewsFragment_to_detailNewsFragment"
             app:destination="@id/detailNewsFragment" />
     </fragment>
 
