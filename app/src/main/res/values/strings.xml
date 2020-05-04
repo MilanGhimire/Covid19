@@ -14,8 +14,6 @@
     <string name="find_out_more_on_staying_safe">Find out more on staying safe</string>
     <string name="total">Total</string>
     <string name="today">Today</string>
-    <string name="news_source">News Source</string>
-    <string name="news_title">News Title</string>
     <string name="covid_19_latest_news">COVID-19 Latest News</string>
     <string name="covid_19_statistics">COVID-19 Statistics</string>
     <string name="tests">Tests</string>
@@ -26,4 +24,6 @@
     <string name="critical">Critical</string>
     <string name="death">Death</string>
     <string name="more_link">more link</string>
+    <string name="article_title">Article Title</string>
+    <string name="article_source">Article Source</string>
 </resources>

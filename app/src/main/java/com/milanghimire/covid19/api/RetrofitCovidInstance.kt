@@ -1,12 +1,12 @@
 package com.milanghimire.covid19.api
 
-import com.milanghimire.covid19.util.Constants.Companion.BASE_URL
+import com.milanghimire.covid19.util.Constants.Companion.COVID_BASE_URL
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class RetrofitInstance {
+class RetrofitCovidInstance {
 
     companion object {
 
@@ -17,7 +17,7 @@ class RetrofitInstance {
                 .addInterceptor(logging)
                 .build()
             Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl(COVID_BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build()
