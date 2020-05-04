@@ -149,6 +149,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/StatusNumericText"
+                        android:textColor="@color/testsCasesColor"
                         android:text="@string/_0"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -173,6 +174,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/StatusNumericText"
+                        android:textColor="@color/casesColor"
                         android:text="@string/_0"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -207,6 +209,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/StatusNumericText"
+                        android:textColor="@color/activeCasesColor"
                         android:text="@string/_0"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -231,6 +234,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/StatusNumericText"
+                        android:textColor="@color/recoveredCasesColor"
                         android:text="@string/_0"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -265,6 +269,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/StatusNumericText"
+                        android:textColor="@color/criticalCasesColor"
                         android:text="@string/_0"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -289,6 +294,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/StatusNumericText"
+                        android:textColor="@color/deathCasesColor"
                         android:text="@string/_0"
                         android:textSize="20sp" />
                 </LinearLayout>
