@@ -3,6 +3,7 @@ package com.milanghimire.covid19.ui
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.milanghimire.covid19.db.entities.CovidCountry
 import com.milanghimire.covid19.db.models.CovidCountryResponse
 import com.milanghimire.covid19.repository.CovidRepository
 import com.milanghimire.covid19.util.Resource
