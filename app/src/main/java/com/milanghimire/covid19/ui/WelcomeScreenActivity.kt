@@ -7,6 +7,8 @@ import android.util.Log
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.milanghimire.covid19.R
+import com.milanghimire.covid19.util.AdapterHelper
+import kotlinx.android.synthetic.main.activity_welcome_screen.*
 
 class WelcomeScreenActivity : AppCompatActivity() {
 
@@ -28,6 +30,12 @@ class WelcomeScreenActivity : AppCompatActivity() {
         Log.d(TAG, "setupUI()")
 
         btnStart = findViewById(R.id.btnStart)
+
+        spinnerWelcomeSpinner.adapter =
+            AdapterHelper.createAdapter(
+                context,
+                resources.getStringArray(R.array.countries_array).toList()
+            )
 
         setupBtnStart()
     }

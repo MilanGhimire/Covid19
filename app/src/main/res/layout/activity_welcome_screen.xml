@@ -61,29 +61,26 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
             android:layout_marginBottom="22dp"
-            style="@style/TitleText"
             android:text="@string/select_your_country"
             android:textColor="#000000"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            style="@style/StatusLinearLayout"
-            android:weightSum="2">
+            android:layout_height="70dp">
 
             <TextView
-                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
                 android:layout_gravity="center_vertical"
                 style="@style/NormalText"
                 android:text="@string/country"
                 android:textColor="#000000"/>
 
             <androidx.appcompat.widget.AppCompatSpinner
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
+                android:id="@+id/spinnerWelcomeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"/>
 
         </LinearLayout>
