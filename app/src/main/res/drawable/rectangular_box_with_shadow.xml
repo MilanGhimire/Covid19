@@ -48,7 +48,7 @@
             <padding
                 android:bottom="1dp"
                 android:left="1dp"
-                android:right="1dp"
+                android:right="2dp"
                 android:top="1dp" />
 
             <solid android:color="#30cbcbcb" />
@@ -59,7 +59,7 @@
             <corners android:radius="4dp" />
 
             <padding
-                android:bottom="2dp"
+                android:bottom="4dp"
                 android:left="1dp"
                 android:right="1dp"
                 android:top="0dp" />
