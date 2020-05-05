@@ -8,6 +8,8 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.milanghimire.covid19.R
 import com.milanghimire.covid19.util.AdapterHelper
+import com.milanghimire.covid19.util.Constants
+import com.milanghimire.covid19.util.SharedPreferencesUtil
 import kotlinx.android.synthetic.main.activity_welcome_screen.*
 
 class WelcomeScreenActivity : AppCompatActivity() {
@@ -31,7 +33,7 @@ class WelcomeScreenActivity : AppCompatActivity() {
 
         btnStart = findViewById(R.id.btnStart)
 
-        spinnerWelcomeSpinner.adapter =
+        spinnerCountrySelector.adapter =
             AdapterHelper.createAdapter(
                 context,
                 resources.getStringArray(R.array.countries_array).toList()
@@ -42,6 +44,11 @@ class WelcomeScreenActivity : AppCompatActivity() {
 
     private fun setupBtnStart() {
         btnStart.setOnClickListener {
+
+            Log.d(TAG, "selected Item is ${spinnerCountrySelector.selectedItem}")
+
+            SharedPreferencesUtil.saveToPreference(context, Constants.PREF_AUTH_COUNTRY, spinnerCountrySelector.selectedItem.toString())
+
             startActivity(Intent(context, CovidActivity::class.java))
             finish()
         }

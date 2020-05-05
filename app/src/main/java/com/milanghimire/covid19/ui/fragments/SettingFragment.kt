@@ -17,7 +17,7 @@ class SettingFragment : Fragment(R.layout.fragment_setting) {
     }
 
     private fun setupUI() {
-        spinnerCountrySetting.adapter =
+        spinnerCountrySelector.adapter =
             AdapterHelper.createAdapter(
                 (context as CovidActivity),
                 resources.getStringArray(R.array.countries_array).toList()
