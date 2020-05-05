@@ -19,11 +19,10 @@ class CovidViewModel(
     val covidWorldStatus: MutableLiveData<Resource<CovidWorldStatusResponse>> = MutableLiveData()
 
     init {
-        getCovidStatus("nepal")
         getCovidWorldStatus()
     }
 
-    fun getCovidStatus(countryName: String) = viewModelScope.launch {
+    fun getCovidCountryStatus(countryName: String) = viewModelScope.launch {
         covidStatus.postValue(Resource.Loading())
         val response = covidRepository.getCovidStatus(countryName)
         Log.d("ViewModel", "Country status: ${response.body()}")

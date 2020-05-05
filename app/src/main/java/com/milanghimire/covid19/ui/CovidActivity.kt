@@ -29,11 +29,14 @@ class CovidActivity : AppCompatActivity() {
         Log.d("TAG", "Selected country is $selectedCountry")
         if (selectedCountry == "") {
             startActivity(Intent(this, WelcomeScreenActivity::class.java))
+            finish()
         }
 
         val covidRepository = CovidRepository(CovidDatabase(this))
         val covidViewModelProviderFactory = CovidViewModelProviderFactory(covidRepository)
         covidViewModel = ViewModelProvider(this, covidViewModelProviderFactory).get(CovidViewModel::class.java)
+        // covidWorldStatus is called in viewModel Initialization
+        covidViewModel.getCovidCountryStatus(selectedCountry)
 
 //        val newsRepository = NewsRepository()
 //        val newsViewModelProviderFactory = NewsViewModelProviderFactory(newsRepository)
