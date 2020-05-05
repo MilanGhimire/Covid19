@@ -46,13 +46,13 @@ class CovidWorldStatusFragment : Fragment(R.layout.fragment_covid_world_status) 
 
     private fun updateTodayWorldStatusData(status: CovidWorldStatusResponse) {
         // initialize the UI views
-        tvTodayCase.text = status.todayCases.toString()
-        tvTodayDeaths.text = status.todayDeaths.toString()
-        tvCases.text = status.cases.toString()
-        tvDeath.text = status.deaths.toString()
-        tvTests.text = status.tests.toString()
-        tvActive.text = status.active.toString()
-        tvRecovered.text = status.recovered.toString()
-        tvCritical.text = status.critical.toString()
+        tvTodayCase.text = String.format("%,d", status.todayCases)
+        tvTodayDeaths.text = String.format("%,d", status.todayDeaths)
+        tvCases.text = String.format("%,d", status.cases)
+        tvDeath.text = String.format("%,d", status.deaths)
+        tvTests.text = String.format("%,d", status.tests)
+        tvActive.text = String.format("%,d", status.active)
+        tvRecovered.text = String.format("%,d", status.recovered)
+        tvCritical.text = String.format("%,d", status.critical)
     }
 }
