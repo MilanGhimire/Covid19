@@ -20,6 +20,7 @@ interface NewsAPI {
         apiKey: String = NEWS_API_KEY
     ): Response<NewsResponse>
 
+//    http://newsapi.org/v2/everything?q=bitcoin&from=2020-04-05&sortBy=publishedAt&apiKey=b2d9cfdde84943b6aa901e91383f5533
     @GET("v2/everything")
 //    used suspend for using coroutines
     suspend fun searchForNews(
