@@ -10,6 +10,7 @@ import com.milanghimire.covid19.R
 import com.milanghimire.covid19.adapters.NewsAdapter
 import com.milanghimire.covid19.ui.CovidActivity
 import com.milanghimire.covid19.ui.NewsViewModel
+import com.milanghimire.covid19.util.RecyclerViewItemSeparator
 import com.milanghimire.covid19.util.Resource
 import kotlinx.android.synthetic.main.fragment_latest_news.*
 
@@ -58,6 +59,7 @@ class LatestNewsFragment : Fragment(R.layout.fragment_latest_news) {
         rvBreakingNews.apply {
             adapter = newsAdapter
             layoutManager = LinearLayoutManager(activity)
+            addItemDecoration(RecyclerViewItemSeparator(10))
         }
     }
 }
