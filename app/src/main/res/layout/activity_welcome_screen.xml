@@ -91,7 +91,7 @@
                 android:textColor="#000000"/>
 
             <androidx.appcompat.widget.AppCompatSpinner
-                android:id="@+id/spinnerWelcomeSpinner"
+                android:id="@+id/spinnerCountrySelector"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"/>
