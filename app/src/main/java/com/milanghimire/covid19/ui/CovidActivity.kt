@@ -38,9 +38,9 @@ class CovidActivity : AppCompatActivity() {
         // covidWorldStatus is called in viewModel Initialization
         covidViewModel.getCovidCountryStatus(selectedCountry)
 
-//        val newsRepository = NewsRepository()
-//        val newsViewModelProviderFactory = NewsViewModelProviderFactory(newsRepository)
-//        newsViewModel = ViewModelProvider(this, newsViewModelProviderFactory).get(NewsViewModel::class.java)
+        val newsRepository = NewsRepository()
+        val newsViewModelProviderFactory = NewsViewModelProviderFactory(newsRepository)
+        newsViewModel = ViewModelProvider(this, newsViewModelProviderFactory).get(NewsViewModel::class.java)
 
 
 
