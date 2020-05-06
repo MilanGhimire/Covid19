@@ -3,6 +3,7 @@ package com.milanghimire.covid19.ui.fragments
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import com.bumptech.glide.Glide
@@ -38,6 +39,7 @@ class CovidStatusFragment : Fragment(R.layout.fragment_covid_status) {
                 is Resource.Error -> {
                     response.message?.let { message ->
                         Log.d(TAG, "Error occured. $message")
+                        Toast.makeText(activity as CovidActivity, message, Toast.LENGTH_SHORT).show()
                     }
                 }
                 is Resource.Loading -> {

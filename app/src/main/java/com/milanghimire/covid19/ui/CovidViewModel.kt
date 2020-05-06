@@ -10,6 +10,9 @@ import com.milanghimire.covid19.repository.CovidRepository
 import com.milanghimire.covid19.util.Resource
 import kotlinx.coroutines.launch
 import retrofit2.Response
+import java.lang.Exception
+import java.net.SocketTimeoutException
+import java.net.UnknownHostException
 
 class CovidViewModel(
     val covidRepository: CovidRepository
@@ -24,9 +27,17 @@ class CovidViewModel(
 
     fun getCovidCountryStatus(countryName: String) = viewModelScope.launch {
         covidStatus.postValue(Resource.Loading())
-        val response = covidRepository.getCovidStatus(countryName)
-        Log.d("ViewModel", "Country status: ${response.body()}")
-        covidStatus.postValue(handleCovidStatusResponse(response))
+        try {
+            val response = covidRepository.getCovidStatus(countryName)
+            Log.d("ViewModel", "Country status: ${response.body()}")
+            covidStatus.postValue(handleCovidStatusResponse(response))
+        } catch (ex: UnknownHostException) {
+            covidStatus.postValue(Resource.Error("No internet connection."))
+        } catch (ex: SocketTimeoutException) {
+            covidStatus.postValue(Resource.Error("Server is not responding."))
+        } catch (ex: Exception) {
+            covidStatus.postValue(Resource.Error("Unknown error found."))
+        }
     }
 
     private fun handleCovidStatusResponse(response: Response<CovidCountryResponse>) : Resource<CovidCountryResponse> {
@@ -40,9 +51,17 @@ class CovidViewModel(
 
     fun getCovidWorldStatus() = viewModelScope.launch {
         covidWorldStatus.postValue(Resource.Loading())
-        val response = covidRepository.getCovidWorldStatus()
-        Log.d("ViewModel", "World status: ${response.body()}")
-        covidWorldStatus.postValue(handleCovidWorldStatusResponse(response))
+        try {
+            val response = covidRepository.getCovidWorldStatus()
+            Log.d("ViewModel", "World status: ${response.body()}")
+            covidWorldStatus.postValue(handleCovidWorldStatusResponse(response))
+        } catch (ex: UnknownHostException) {
+            covidWorldStatus.postValue(Resource.Error("No internet connection."))
+        } catch (ex: SocketTimeoutException) {
+            covidWorldStatus.postValue(Resource.Error("Server is not responding."))
+        } catch (ex: Exception) {
+            covidWorldStatus.postValue(Resource.Error("Unknown error found."))
+        }
     }
 
     private fun handleCovidWorldStatusResponse(response: Response<CovidWorldStatusResponse>) : Resource<CovidWorldStatusResponse> {
