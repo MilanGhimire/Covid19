@@ -32,13 +32,13 @@ class CovidStatusFragment : Fragment(R.layout.fragment_covid_status) {
                 is Resource.Success -> {
 //                    ?.let is used for checking if response in not null
                     response.data?.let {
-                        Log.d(TAG, "Data is retrived from API. ${response.data}")
+                        Log.d(TAG, "Data is retrieved from API. ${response.data}")
                         updateTodayStatusData(response.data)
                     }
                 }
                 is Resource.Error -> {
                     response.message?.let { message ->
-                        Log.d(TAG, "Error occured. $message")
+                        Log.d(TAG, "Error occurred. $message")
                         Toast.makeText(activity as CovidActivity, message, Toast.LENGTH_SHORT).show()
                     }
                 }
