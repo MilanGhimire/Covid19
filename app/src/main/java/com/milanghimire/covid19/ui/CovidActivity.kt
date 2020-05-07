@@ -17,6 +17,8 @@ import kotlinx.android.synthetic.main.activity_covid.*
 
 class CovidActivity : AppCompatActivity() {
 
+    private val TAG = "CovidActivity"
+
     lateinit var covidViewModel: CovidViewModel
     lateinit var newsViewModel: NewsViewModel
 
@@ -41,8 +43,6 @@ class CovidActivity : AppCompatActivity() {
         val newsRepository = NewsRepository()
         val newsViewModelProviderFactory = NewsViewModelProviderFactory(newsRepository)
         newsViewModel = ViewModelProvider(this, newsViewModelProviderFactory).get(NewsViewModel::class.java)
-
-
 
         bottomNavigationView.setupWithNavController(covidNavHostFragment.findNavController())
     }

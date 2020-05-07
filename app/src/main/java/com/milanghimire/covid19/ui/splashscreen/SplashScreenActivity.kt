@@ -20,6 +20,7 @@ class SplashScreenActivity : AppCompatActivity() {
         Handler().postDelayed({
             Log.d("SplashScreenActivity", "Splashscreen is been shown.")
             startActivity(Intent(this, CovidActivity::class.java))
+            finish()
         }, 3000)
     }
 }

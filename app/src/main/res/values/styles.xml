@@ -29,7 +29,7 @@
         <item name="android:background">@color/layout_background_color</item>
     </style>
 
-    <style name="AppTheme.SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme.SplashScreen" parent="Theme.MaterialComponents.NoActionBar">
         <item name="android:windowTranslucentNavigation">false</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">true</item>
