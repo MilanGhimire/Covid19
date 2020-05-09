@@ -25,8 +25,6 @@ class CovidStatusFragment : Fragment(R.layout.fragment_covid_status) {
 
         viewModel = (activity as CovidActivity).covidViewModel
 
-        setupUI()
-
         viewModel.covidStatus.observe(viewLifecycleOwner, Observer { response ->
             when(response) {
                 is Resource.Success -> {
@@ -47,32 +45,6 @@ class CovidStatusFragment : Fragment(R.layout.fragment_covid_status) {
                 }
             }
         })
-    }
-
-    private fun setupUI() {
-
-        btnToday.setOnClickListener {
-            Log.d(TAG, "Btn today")
-            viewModel.covidStatus.observe(viewLifecycleOwner, Observer { response ->
-                when(response) {
-                    is Resource.Success -> {
-//                    ?.let is used for checking if response in not null
-                        response.data?.let {
-                            Log.d(TAG, "Data is retrived from API. ${response.data}")
-                            updateTodayStatusData(response.data)
-                        }
-                    }
-                    is Resource.Error -> {
-                        response.message?.let { message ->
-                            Log.d(TAG, "Error occured. $message")
-                        }
-                    }
-                    is Resource.Loading -> {
-                        Log.d(TAG, "Request is Loading.")
-                    }
-                }
-            })
-        }
     }
 
     private fun updateTodayStatusData(status: CovidCountryResponse) {
