@@ -35,13 +35,13 @@ class CovidActivity : AppCompatActivity() {
         }
 
         val covidRepository = CovidRepository(CovidDatabase(this))
-        val covidViewModelProviderFactory = CovidViewModelProviderFactory(covidRepository)
+        val covidViewModelProviderFactory = CovidViewModelProviderFactory(application, covidRepository)
         covidViewModel = ViewModelProvider(this, covidViewModelProviderFactory).get(CovidViewModel::class.java)
         // covidWorldStatus is called in viewModel Initialization
         covidViewModel.getCovidCountryStatus(selectedCountry)
 
         val newsRepository = NewsRepository()
-        val newsViewModelProviderFactory = NewsViewModelProviderFactory(newsRepository)
+        val newsViewModelProviderFactory = NewsViewModelProviderFactory(application, newsRepository)
         newsViewModel = ViewModelProvider(this, newsViewModelProviderFactory).get(NewsViewModel::class.java)
 
         bottomNavigationView.setupWithNavController(covidNavHostFragment.findNavController())
