@@ -37,7 +37,7 @@ class CovidStatusFragment : Fragment(R.layout.fragment_covid_status) {
                 is Resource.Error -> {
                     response.message?.let { message ->
                         Log.d(TAG, "Error occurred. $message")
-                        Toast.makeText(activity as CovidActivity, message, Toast.LENGTH_SHORT).show()
+                        Toast.makeText(activity, message, Toast.LENGTH_SHORT).show()
                     }
                 }
                 is Resource.Loading -> {
