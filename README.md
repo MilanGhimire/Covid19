@@ -6,6 +6,8 @@ Also provides the news regarding to Covid-19
 This app is designed by [Ghana Shyam Khadka](https://ghanashyamkhadka.com.np/) his [Dribbble](https://dribbble.com/shots/11284657-COVID-19-Statistics-App)
 and Developed by [Milan Ghimire](http://www.ghimiremilan.com.np) also thanks to all who gave feedback to XD design and in App too.
 
+Also thank you the [Awasome tutorial](https://www.youtube.com/channel/UCKNTZMRHPLXfqlbdOI7mCkg) [AndroidDevs](https://github.com/androiddevs18)
+
 And special thanks to [Paras Nath Chaudhary](https://parasnath.com.np/).
 
 ### MIT License
